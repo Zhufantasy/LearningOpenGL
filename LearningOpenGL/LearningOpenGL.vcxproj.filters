@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hello_window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="textures.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="transformations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="coordinate_system.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="colors.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="basic_lighting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="materials.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting_maps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="light_casters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="multiple_lights.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="depth_testing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stencil_testing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blending.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="face_culling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="framebuffers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cubemaps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="advanced_glsl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry_shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="instancing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="advanced_lighting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shadow_mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="points_shadows.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="normal_mapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="textures.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="textures.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="transformations.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="transformations.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="coordinate_system.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="coordinate_system.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="colors.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="colors.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="colors_light.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="basic_lighting.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="basic_lighting.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="materials.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="materials.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="lighting_maps.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="lighting_maps.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="light_casters.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="light_casters.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="multiple_lights.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="multiple_lights.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="depth_testing.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="depth_testing.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="stencil_testing.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="stencil_testing.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="stencil_testing_floor.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="blending.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="blending.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers_screen.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="framebuffers_screen.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cubemaps.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cubemaps.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cubemaps_skybox.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cubemaps_skybox.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="advanced_glsl.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="advanced_glsl_red.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="advanced_glsl_yellow.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="geometry_shader.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="geometry_shader.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="geometry_shader.geom">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="instancing.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="instancing.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="advanced_lighting.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="advanced_lighting.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping_depth.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping_depth.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="shadow_mapping.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="points_shadows.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="points_shadows.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="points_shadows_depth.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="points_shadows_depth.frag">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="points_shadows_depth.geom">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="normal_mapping.vert">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="normal_mapping.frag">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="advanced_glsl_blue.frag">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="advanced_glsl_green.frag">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

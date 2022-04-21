@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FCC3F677-9508-4C87-91EC-345CA71241C2}</ProjectGuid>
+    <RootNamespace>LearningOpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Library\glm;D:\Library\glfw\include;D:\Library\glew-2.2.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Library\glfw;D:\Library\glew-2.2.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Library\glm;D:\Library\glfw\include;D:\Library\glew-2.2.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Library\glfw;D:\Library\glew-2.2.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>D:\Library\glm;D:\Library\glfw\include;D:\Library\glew-2.2.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Library\glfw;D:\Library\glew-2.2.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Library\glm;D:\Library\glfw\include;D:\Library\glew-2.2.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Library\glfw;D:\Library\glew-2.2.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="advanced_glsl.cpp" />
+    <ClCompile Include="advanced_lighting.cpp" />
+    <ClCompile Include="basic_lighting.cpp" />
+    <ClCompile Include="blending.cpp" />
+    <ClCompile Include="colors.cpp" />
+    <ClCompile Include="coordinate_system.cpp" />
+    <ClCompile Include="cubemaps.cpp" />
+    <ClCompile Include="depth_testing.cpp" />
+    <ClCompile Include="face_culling.cpp" />
+    <ClCompile Include="framebuffers.cpp" />
+    <ClCompile Include="geometry_shader.cpp" />
+    <ClCompile Include="hello_triangle.cpp" />
+    <ClCompile Include="hello_window.cpp" />
+    <ClCompile Include="instancing.cpp" />
+    <ClCompile Include="lighting_maps.cpp" />
+    <ClCompile Include="light_casters.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="materials.cpp" />
+    <ClCompile Include="multiple_lights.cpp" />
+    <ClCompile Include="normal_mapping.cpp" />
+    <ClCompile Include="points_shadows.cpp" />
+    <ClCompile Include="shaders.cpp" />
+    <ClCompile Include="shadow_mapping.cpp" />
+    <ClCompile Include="stb.cpp" />
+    <ClCompile Include="stencil_testing.cpp" />
+    <ClCompile Include="textures.cpp" />
+    <ClCompile Include="transformations.cpp" />
+    <ClCompile Include="camera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="advanced_glsl.vert" />
+    <None Include="advanced_glsl_red.frag" />
+    <None Include="advanced_glsl_yellow.frag" />
+    <None Include="advanced_lighting.frag" />
+    <None Include="advanced_lighting.vert" />
+    <None Include="basic_lighting.frag" />
+    <None Include="basic_lighting.vert" />
+    <None Include="blending.frag" />
+    <None Include="blending.vert" />
+    <None Include="colors.frag" />
+    <None Include="colors.vert" />
+    <None Include="colors_light.frag" />
+    <None Include="coordinate_system.frag" />
+    <None Include="coordinate_system.vert" />
+    <None Include="cubemaps.frag" />
+    <None Include="cubemaps.vert" />
+    <None Include="cubemaps_skybox.frag" />
+    <None Include="cubemaps_skybox.vert" />
+    <None Include="depth_testing.frag" />
+    <None Include="depth_testing.vert" />
+    <None Include="framebuffers.frag" />
+    <None Include="framebuffers.vert" />
+    <None Include="framebuffers_screen.frag" />
+    <None Include="framebuffers_screen.vert" />
+    <None Include="geometry_shader.frag" />
+    <None Include="geometry_shader.geom" />
+    <None Include="geometry_shader.vert" />
+    <None Include="instancing.frag" />
+    <None Include="instancing.vert" />
+    <None Include="lighting_maps.frag" />
+    <None Include="lighting_maps.vert" />
+    <None Include="light_casters.frag" />
+    <None Include="light_casters.vert" />
+    <None Include="materials.frag" />
+    <None Include="materials.vert" />
+    <None Include="multiple_lights.frag" />
+    <None Include="multiple_lights.vert" />
+    <None Include="normal_mapping.frag" />
+    <None Include="normal_mapping.vert" />
+    <None Include="points_shadows.frag" />
+    <None Include="points_shadows.vert" />
+    <None Include="points_shadows_depth.frag" />
+    <None Include="points_shadows_depth.geom" />
+    <None Include="points_shadows_depth.vert" />
+    <None Include="shadow_mapping.frag" />
+    <None Include="shadow_mapping.vert" />
+    <None Include="shadow_mapping_depth.frag" />
+    <None Include="shadow_mapping_depth.vert" />
+    <None Include="stencil_testing.frag" />
+    <None Include="stencil_testing.vert" />
+    <None Include="stencil_testing_floor.frag" />
+    <None Include="textures.frag" />
+    <None Include="textures.vert" />
+    <None Include="transformations.frag" />
+    <None Include="transformations.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="advanced_glsl_blue.frag" />
+    <Text Include="advanced_glsl_green.frag" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
